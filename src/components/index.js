@@ -1,0 +1,6 @@
+export {default as Navbar} from './Navbar'
+export {default as Slider} from './Slider'
+export {default as Footer} from './Footer'
+export {default as CreateBlog} from './CreateBlog'
+export {default as Project} from './Project'
+export {default as Filiales} from './Filiales'

@@ -1,0 +1,99 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About Us",
+        "contact": "Contact Us"
+    },
+    "introduction": "Festival Balafons is a vibrant and inclusive festival celebrating the rich cultural heritage of Africa. Taking place in the beautiful city of Tunis, Tunisia, the festival aims to bring together people from all walks of life to enjoy a variety of music, dance, and art performances that showcase the diversity of African culture. The festival will take place on June 18th and 19th, 2023, and will feature talented performers from across the African continent. Through this event, the organizers hope to promote unity, inclusivity, and appreciation for the beauty and richness of African culture.",
+    "about": {
+        "title": "About the event",
+        "content": "The Festival Balafons is a vibrant and diverse celebration of the rich cultural heritage of Africa. From May 25th to 28th, 2023, the festival will take place in the beautiful city of Tunis, Tunisia, bringing together people from all walks of life to experience the beauty and richness of African culture. The festival will feature a wide range of music, dance, and art performances, showcasing the diversity of African traditions and contemporary expressions. In addition to the performances, the festival will offer a variety of workshops, exhibitions, and discussions, providing opportunities for the audience to deepen their understanding and appreciation of African culture. Through this event, the organizers aim to promote cultural exchange, dialogue, and mutual respect among people of different cultures and backgrounds."
+    },
+    "agenda": {
+        "before":"Before The Festival",
+        "day1": {
+            "title": "Day 1. Mixed",
+            "one": "African Cup-style opening ceremony with the various sub-Saharan countries partnering in the event taking turns, ribbon cutting, singing of the Tunisian National Anthem by a mixed orchestra. speeches by Tunisian officials, the sub-Saharan chancellery, the president of Aesat, the promoter of the Balafon Festival.",
+            "two": "Projection of a videogram of the privileged relations which have always predominated the Tunisian-Sub-Saharan relations, projection of the activities carried out before the event and the preparations",
+            "three": "Parade with traditional clothes",
+            "four": "Theater",
+            "five": "Dance show",
+            "six": "Traditional music", 
+            "seven": "Work of art (plastic art), African scenography"
+        },
+        "day2": {
+            "title": "Day 2.",
+            "header": "North Africa - East Africa: Tunisia, Libya, Morocco, Egypt, Algeria, Mauritania, Burundi, Comoros, Djibouti, Ethiopia, Somalia, South Sudan, Sudan",
+            "one": "Dance",
+            "two": "Theater",
+            "three": "Miss Tunisia Fashion Show",
+            "four": "Sapology competition",
+            "five": "Free food tasting",
+            "six": "Exhibition stand",
+            "seven": "Medical campaign in Bourguiba - Screening",
+            "eight": "Exhibition of migrant companies",
+            "nine": "Biggest eater contest",
+            "ten": "International and local artist concert",
+            "eleven": "Karaoke open to the public"
+        },
+        "day3": {
+            "title": "Day 3.",
+            "header": "West Africa: Benin, Burkina Faso, Cape Verde, Gambia, Ghana, Guinea, Guinea-Bissau, Mali, Niger, Nigeria, Senegal and Togo."
+        },
+        "day4": {
+            "title": "Day 4.",
+            "header": "Central Africa - Southern Africa: Cameroon, Central African Republic, Republic of Congo. Democratic Republic of Congo, Gabon, Equatorial Guinea, Sao Tome and Principe, Chad, Angola, and Zimbabwe"
+        },
+        "one": "Seminar: press conference for the official launch of the balafon festival and the program of the activities carried out",
+        "two": "Open debate sessions: reception and refugee issues, African cultures, food, ecology in different places and university.",
+        "three": "Ifrikya-Africa Friendship Match: A women's gala match between political icons, journalists, etc. of different sub-Saharan and Tunisian nationalities.",
+        "four": "Training: entrepreneurship, soft skills, etc. with Enda and preferably registration should start in April.",
+        "five": "Ecological walk with cleaning and garbage collection at Carthage.",
+        "six": "Language courses to facilitate integration (Mainly Tunisians for sub-Saharans, Wolo courses)"
+    },
+    "details": {
+        "miss_content": "The Miss Tunisia Fashion Show is a showcase of the country's beauty and fashion. This event features some of the most talented and beautiful Tunisian women as they grace the stage in stunning African-inspired outfits. This is a chance to see the latest trends in Tunisian fashion and celebrate the diversity of African beauty.",
+        "food_content": "Food is an important part of any culture, and African cuisine is no exception. The free African food tasting at our festival gives visitors a chance to experience the rich and varied flavors of African cooking. From spicy stews to sweet desserts, there is something for everyone to enjoy. This is a great opportunity to try something new and explore the tastes of Africa.",
+        "dance_content": "Dance is an integral part of African culture, and at our festival, we celebrate this with a variety of performances. From traditional dances to modern interpretations, our African dance showcase is a feast for the eyes and ears. This is a chance to experience the rhythm and energy of Africa, and to appreciate the unique expressions of dance that come from different regions of the continent."
+        
+    },
+    "partners": "We are thrilled to have partnered with some fantastic organizations who share our passion for promoting African culture. For detailed information on our partners and their involvement in the festival, please check out the relevant section on our website.",
+    "partners_button": "Learn More",
+    "form" : {
+        "devis": "Obtain your quote for free",
+        "title": "Contact Us",
+        "caption" : "Feel free to send us a message!",
+        "rel" : "Please specify the business relation:",
+        "rel_a": "----Are you a----",
+        "rel_c": "Customer", 
+        "rel_b": "Business",
+        "res": "Reserve Your Stay",
+        "res_content": "If you feel like getting more informations before reserving your stay, please",
+        "res_link": "Click here to send us a message",
+        "l1": "Personal Informations",
+        "name": "Name",
+        "email": "Email",
+        "ph": "Phone Number",
+        "l2": "Lodging",
+        "type": "Please Select a type of lodging",
+        "t1": "Please Select", 
+        "t2": "Hotel",
+        "t3":"House",
+        "h_type": "Please select an option",
+        "h_t1": "Please Select", 
+        "hlod": "Type of lodging",
+        "s_num": "Number of Persons",
+        "s_rooms": "Number of Rooms",
+        "button": "Submit",
+        "bus": "Business Name",
+        "bemail": "Business Email",
+        "bph": "Business Phone Number",
+        "desc": "Brief Description of the work",
+        "ms": "Send us a message",
+        "mod": "Home Page",
+        "mod_header" : "We have calculated the estimated price",
+        "mod_priceMin": "The price will be in between ",
+        "mod_priceMax": "€ and "
+        
+    }
+}

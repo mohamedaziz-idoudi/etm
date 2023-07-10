@@ -1,0 +1,81 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About Us",
+        "project": "Project Catalog",
+        "mat": "Equipments",
+        "fil": "Our Subsidiaries",
+        "contact": "Contact Us",
+        "privacy": "Privacy Policy"
+    },
+    "header": "«ETM HOLDING» actor in the field of public works, founded in Tunisia since January 2002, has put all its know-how, its human and material resources for the realization of road infrastructure projects, hydraulics, real estate development and..",
+    "learn": "Learn More",
+    "quote": "“BECAUSE YOUR SATISFACTION IS OUR BEST REWARD, WE ARE COMMITTED TO PROVIDING SERVICE THAT IS ALWAYS GUIDED BY EFFICIENCY. ALONE WE GO FASTER TOGETHER WE GO FURTHER”",
+    "last": "Last Article",
+    "read": "Read More",
+    "sub": {
+        "tunisia": "ETM OF PUBLIC WORKS _ TUNISIA",
+        "bur": "ETM OF PUBLIC WORKS _BURKINA FASO",
+        "togo": "ETM OF PUBLIC WORKS _TOGO",
+        "beton": "EXCELLENCE BETON DU CAP-BON",
+        "imm": "ETM IMMOBILIERE",
+        "button": "Learn More About Our Subsidiaries"
+    },
+    "slider": {
+        "title": "Enjoy consulting our achievements’ Catalog",
+        "caption":"Witness the remarkable synergy of quality, speed, and unwavering commitment to excellence as you dive into our catalog of achievements.",
+        "button": "Consult our Catalog"
+    },
+    "about": {
+        "title": "About US",
+        "word_title": "The Word Of The President",
+        "word_para1":"«ETM HOLDING» actor in the field of public works, founded in Tunisia since January 2002, has put all its know-how, its human and material resources for the realization of road infrastructure projects, hydraulics, real estate development and marketing of pre-employment concrete.",
+        "word_para2": "Responsible and committed, «ETM HOLDING» makes quality and speed in execution, its first added values.",
+        "word_para3": "Our long-term development depends on our ability to position ourselves on the most relevant offers possible and to strengthen ourselves on all road network developers, by integrating digital tools and new technologies that are transforming our businesses today",
+        "gras": "ETM HOLDING is also driven by a single ambition: to strive for excellence by meeting, better than the others, the challenges that redefine the act of setting up a construction: Respect for schedules and budgets allocated to the various projects, give priority to health and safety, environmental protection, pay particular attention to supporting the territories where we are present with job creation, but also the realization of solidarity actions.",
+        "phil_title": "Our Philosophy",
+        "phil_para1": "«ETM HOLDING» is a diversified group, structured by a strong corporate culture and whose businesses are organized around the following main activities: realization of road projects, construction, hydraulic works, real estate development, production and marketing of concrete and quarry products, with the desire to be a global player positioned on each link of the construction value chain.",
+        "phil_para2": "More than ever, the construction sector must face societal, social and environmental challenges. We have chosen to meet these challenges on a daily basis, at each stage of our projects. Thus, sustainable construction is at the heart of our strategy.",
+        "phil_para3": "Customers, partners, employees, residents... We pay particular attention to dialogue with our stakeholders. Throughout the year, these exchanges help us achieve our sustainable development goals.",
+        "phil_para4": "From the design to the operation of a project, respect for the environment, integrated into our vision of sustainable construction, is one of our main concerns. A commitment that our teams translate into meaningful actions.",
+        "phil_para5": "Sustainable construction is a major challenge in our business. It requires the involvement of all actors in the construction sector, from partners to customers. Thus, we act on a daily basis to support, animate and promote this strategic priority of the Group.",
+        "phil_para6": "As a group that is open to the international, we pay particular attention to supporting the territories where we will be present. This commitment is concretized with the creation of jobs, but also the realization of solidarity actions.",
+        "phil_para7": "Because our employees are the first actors in the group’s ambition to build a better life, we are always more demanding to promote their well-being. Ensuring the evolution and development of each individual is a priority that guides our Resources initiatives.",
+        "button1": "Consult our Projects’ Catalog",
+        "button2": "Explore our diverse Subsidiaries",
+        "quest": "Questions? Press?",
+        "email": "Get in touch via email.",
+        "fb": "You can also follow along with our journey on LinkedIn or Facebook."
+    },
+    "form": {
+        "title": "Please feel free to contact us here",
+        "name": "Name",
+        "ph": "Phone Number",
+        "email": "Email ",
+        "message": "Message",
+        "button": "Submit"
+    },
+    "catalog" : {
+        "header" : "Welcome to our achieved ",
+        "header-b": "projects’ catalog",
+        "subheader": "Explore our impressive portfolio of successfully completed projects, showcasing our expertise in road infrastructure, hydraulics, real estate development, and pre-employment concrete.",
+        "title": "Consult Our Achievements"
+    },
+    "fil": {
+        "title": "Our Subsidiaries",
+        "tun": "ETM OF PUBLIC WORKS _ TUNISIE",
+        "burk": "ETM OF PUBLIC WORKS _ BURKINA FASO",
+        "togo": "ETM OF PUBLIC WORKS _ TOGO",
+        "tun_desc": "General contractor that operates nationally and internationally in the following areas of activity:",
+        "tun_list1": "Implementation of road projects",
+        "tun_list2": "Construction of engineering structures",
+        "tun_list3": "Subdivision servicing ",
+        "tun_list4": "Production and marketing of asphalt concrete",
+        "tun_list5": "Production and marketing of quarry products",
+        "tun_list6": "Equipment rental",
+        "burk_list": "Manufacture, marketing and implementation of bituminous concrete and BBME. ",
+        "ex": "Ready-mixed concrete manufacturing and sales company",
+        "imm": "Real estate company that operates in Marketing of serviced land Real estate development"
+
+    }
+}
