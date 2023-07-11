@@ -29,8 +29,8 @@
 }
 
 a {
-  color: unset;
-  text-decoration: none;
+  color: unset !important;
+  text-decoration: none !important;
 }
 
 .gradient__text {
