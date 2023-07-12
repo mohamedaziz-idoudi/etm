@@ -60,7 +60,7 @@ function App({ Component, pageProps }) {
         <meta charset="utf-8" />
         <link rel="icon" href="../assets/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <meta name="robots" content="index,follow" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="ETM Holding" />
         <link rel="icon" href="../assets/logo.png" />
