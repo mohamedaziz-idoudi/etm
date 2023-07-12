@@ -57,6 +57,12 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../assets/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="ETM Holding" />
         <link rel="icon" href="../assets/logo.png" />
         <title>ETM Holding</title>
       </Head>
