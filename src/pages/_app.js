@@ -4,7 +4,7 @@ import '@/styles/globals.css'
 import { initReactI18next } from 'react-i18next';
 import i18n from 'i18next';
 import HttpBackend from 'i18next-http-backend';
-import {Navbar, Footer} from '../components'
+import { Navbar, Footer } from '../components'
 // Import translations
 import translationEN from '../../public/locales/en/common.json';
 import translationFR from '../../public/locales/fr/common.json';
@@ -14,6 +14,7 @@ import Cookies from 'js-cookie';
 import { parseCookies, setCookie } from 'nookies';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import logo from '../assets/logo.png'
+import Head from 'next/head'
 const languageDetector = {
   type: 'languageDetector',
   async: true,
@@ -55,6 +56,10 @@ function App({ Component, pageProps }) {
   }, []);
   return (
     <>
+      <Head>
+        <link rel="icon" href="../assets/logo.png" />
+        <title>ETM Holding</title>
+      </Head>
       <Navbar />
       <Component {...pageProps} />
       <Footer />
