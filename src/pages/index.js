@@ -16,6 +16,7 @@ import togo from '../assets/togo.png'
 import burkina_faso from '../assets/burkina-faso.png'
 import mixer from '../assets/mixer.png'
 import building from '../assets/building.png'
+
 import { Slider } from '@/components';
 
 export default function Home() {
@@ -43,6 +44,16 @@ export default function Home() {
   }, [])
   return (
     <>
+      <Head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="../assets/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index,follow" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="ETM Holding" />
+        <link rel="icon" href="../assets/logo.png" />
+        <title>ETM Holding</title>
+      </Head>
       <I18nextProvider i18n={i18n}>
         <div className={styles.header} >
           <h2>ETM Holding</h2>
