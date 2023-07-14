@@ -50,9 +50,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="ETM Holding" />
+        <meta name="description" content="Group ETMHolding" />
         <link rel="icon" href="../assets/logo.png" />
-        <title>ETM Holding</title>
+        <title>Group ETM Holding</title>
       </Head>
       <I18nextProvider i18n={i18n}>
         <div className={styles.header} >

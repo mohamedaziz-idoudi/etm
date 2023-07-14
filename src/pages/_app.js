@@ -62,9 +62,9 @@ function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index,follow" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="ETM Holding" />
+        <meta name="description" content="Group ETMHolding" />
         <link rel="icon" href="../assets/logo.png" />
-        <title>ETM Holding</title>
+        <title>Group ETM Holding</title>
       </Head>
       <Navbar />
       <Component {...pageProps} />
