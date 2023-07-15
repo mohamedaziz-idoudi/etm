@@ -45,7 +45,6 @@ function App({ Component, pageProps }) {
   useEffect(() => {
     const selectedLanguage = Cookies.get('selectedLanguage');
     i18n.changeLanguage(selectedLanguage || 'fr');
-    console.log(i18n.language)
     const cookies = parseCookies();
     if (!cookies.isadmin) {
       setCookie(null, 'isadmin', 'false', {

@@ -1,15 +1,23 @@
-import React from 'react'
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 import materiel1 from '../../assets/materiel1.jpg'
 import materiel2 from '../../assets/materiel2.jpg'
 import materiel3 from '../../assets/materiel3.jpg'
+import Axios from 'axios';
 import * as AiIcons from 'react-icons/ai';
 import { Table } from 'react-bootstrap'
 export default function index() {
+    const [equip,setEquip] = useState([{}]);
+    useEffect(()=> {
+        Axios.get("/api/equip/fetch").then((data)=> {
+            setEquip(data.data);
+        })
+    },[])
     return (
         <>
             <div className='fill_header'>
-                <h1>Material Park</h1>
+                <h1>Equipments</h1>
             </div>
             <div className='materiel_container'>
                 <div className="section-header">
@@ -23,91 +31,23 @@ export default function index() {
                     <Image src={materiel1} alt='Image' id='image3' />
                 </div>
             </div>
-            <div className="dashboard__content dashboard_table">
-                <Table striped bordered hover variant="dark" style={{ width: '80vw' }}>
+            <div className="dashboard_table">
+                <Table striped bordered hover variant="dark" style={{ width: "80%", overflow: 'scroll' }}>
                     <thead>
                         <tr>
-                            <th>Materials</th>
-                            <th>Quantity</th>
+                            <th>Equipments</th>
+                            <th>Quantités</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th>CAMIONS & TRACTEURS ROUTIERS</th>
-                            <th>54</th>
-                        </tr>
-                        <tr>
-                            <th>AUTOBETONNIERE</th>
-                            <th>4</th>
-                        </tr>
-                        <tr>
-                            <th>BRISE ROCHE</th>
-                            <th>4</th>
-                        </tr>
-                        <tr>
-                            <th>BULLDOZER</th>
-                            <th>3</th>
-                        </tr>
-                        <tr>
-                            <th>CHARGEUSE</th>
-                            <th>12</th>
-                        </tr>
-                        <tr>
-                            <th>COMPACTEUR</th>
-                            <th>8</th>
-                        </tr>
-                        <tr>
-                            <th>NIVELEUSE</th>
-                            <th>10</th>
-                        </tr>
-                        <tr>
-                            <th>PELLE</th>
-                            <th>8</th>
-                        </tr>
-                        <tr>
-                            <th>PORTE CHAR</th>
-                            <th>3</th>
-                        </tr>
-                        <tr>
-                            <th>REPANDEUSE</th>
-                            <th>1</th>
-                        </tr>
-                        <tr>
-                            <th>TRACTOPELLE</th>
-                            <th>3</th>
-                        </tr>
-                        <tr>
-                            <th>FINISSEUR</th>
-                            <th>1</th>
-                        </tr>
-                        <tr>
-                            <th>CYLINDRE</th>
-                            <th>15</th>
-                        </tr>
-                        <tr>
-                            <th>UNITE DE CONCASAGE</th>
-                            <th>3</th>
-                        </tr>
-                        <tr>
-                            <th>FOREUSE</th>
-                            <th>1</th>
-                        </tr>
-                        <tr>
-                            <th>GRAVILONNEUSE</th>
-                            <th>1</th>
-                        </tr>
-                        <tr>
-                            <th>CRIBLE</th>
-                            <th>1</th>
-                        </tr>
-                        <tr>
-                            <th>CENTRALE D ENROBE</th>
-                            <th>1</th>
-                        </tr>
-                        <tr>
-                            <th>CENTRALE A BETON</th>
-                            <th>1</th>
-                        </tr>
+                        {Array.from(equip).map((val,key)=> {
+                            return(
+                                <tr key={key}>
+                                    <th>{val.mat}</th>
+                                    <th>{val.quantity}</th>
+                                </tr>
+                            )
+                        })}
                     </tbody>
                     
                 </Table>

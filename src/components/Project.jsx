@@ -3,7 +3,9 @@ import * as AiIcons from 'react-icons/ai';
 import { Editor } from '@tinymce/tinymce-react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
+import { useQuill } from "react-quilljs";
 const Project = () => {
+    const { quill, quillRef } = useQuill();
     const router = useRouter();
     const [add, setAdd] = useState(false);
     const [edit, setEdit] = useState(false);
@@ -36,8 +38,8 @@ const Project = () => {
 
             axios.post("https://api.cloudinary.com/v1_1/djzf1gnjd/image/upload", formData).then(async (response) => {
                 console.log(response);
-                if (content.level) {
-                    axios.post("/api/projects/add", { title: name, paragraph: content.level.content, image: response.data.secure_url, images: links, filiale: filiale }).then(()=> {
+                if (quill) {
+                    axios.post("/api/projects/add", { title: name, paragraph: quill.root.innerHTML, image: response.data.secure_url, images: links, filiale: filiale }).then(()=> {
                         router.push('/catalog');
                     });
                 }
@@ -76,19 +78,9 @@ const Project = () => {
                             setImage(e.target.files[0]);
                         }} />
                         <label>Description du Projet:</label>
-                        <Editor
-                            onInit={(evt, editor) => editorRef.current = editor}
-                            initialValue=""
-                            onChange={setContent}
-                            init={{
-                                height: 500,
-                                apiKey: 'iq8au7ol5ckuwydc3h6r47g97ipdma9gvr19332oa4zfcw3p',
-                                menubar: false,
-                                plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
-                                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-                                content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
-                            }}
-                        />
+                        <div style={{ width: "600px", height: "300px", overflow: "scroll" }}>
+                            <div ref={quillRef} />
+                        </div>
                         <label>Upload Images</label>
                         <input type="file" multiple onChange={handleImageChange} />
                         <div className="dark__button">

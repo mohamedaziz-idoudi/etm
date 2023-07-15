@@ -6,7 +6,7 @@ import Axios from 'axios'
 import dynamic from 'next/dynamic';
 import { Editor } from '@tinymce/tinymce-react';
 import { useRouter } from 'next/router';
-import { CreateBlog, Project, Filiales } from '@/components';
+import { CreateBlog, Project, Equip } from '@/components';
 export default function index() {
     const [blog, setBlog] = useState(false)
     const [sign, setSign] = useState(false)
@@ -39,9 +39,9 @@ export default function index() {
                     <div className="dmt__dashboard-sidebar">
                         <div className="dmt__dashboard-sidebar_links">
                             <ul>
-                                <li onClick={() => { setBlog(true); setSign(false); setTraining(false);}}>Créer Un Article</li>
-                                <li onClick={() => { setBlog(false); setSign(true); setTraining(false);}}>Les Projets</li>
-                                <li onClick={() => { setBlog(false); setSign(false); setTraining(true); }}>Les Filiales</li>
+                                <li onClick={() => { setBlog(true); setSign(false); setTraining(false); }}>Créer Un Article</li>
+                                <li onClick={() => { setBlog(false); setSign(true); setTraining(false); }}>Les Projets</li>
+                                <li onClick={() => { setBlog(false); setSign(false); setTraining(true); }}>Les Equipments</li>
                             </ul>
                         </div>
                     </div>
@@ -52,7 +52,9 @@ export default function index() {
                         <Project />
                     )}
                     {training && (
-                        <Filiales />
+                        <>
+                            <Equip />
+                        </>
                     )}
                 </div>
             </div>

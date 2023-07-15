@@ -2,7 +2,7 @@
   "name": "etm",
   "version": "0.1.0",
   "private": true,
-  "homepage": "etm-holding.com",
+  "homepage": "groupetmholding.com",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
@@ -38,6 +38,7 @@
     "react-i18next": "^13.0.1",
     "react-icons": "^4.10.1",
     "react-quill": "^2.0.0",
+    "react-quilljs": "^1.3.3",
     "react-simple-image-slider": "^2.4.1",
     "semantic-ui-react": "^2.1.4",
     "url": "^0.11.1"

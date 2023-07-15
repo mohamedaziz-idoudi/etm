@@ -2,98 +2,79 @@
     "navbar": {
         "home": "Accueil",
         "about": "A Propos",
-        "contact": "Contactez Nous"
+        "project": "Projets Réalisés",
+        "mat": "Equipement",
+        "fil": "Nos Filiales",
+        "contact": "Contactez Nous",
+        "privacy": "Politique de Confidentialité"
     },
-    "introduction": "Festival Balafons est un festival vibrant et inclusif qui célèbre le riche patrimoine culturel de l'Afrique. Se déroulant dans la magnifique ville de Tunis, en Tunisie, le festival vise à rassembler des personnes de tous horizons pour profiter d'une variété de performances musicales, de danse et d'art qui mettent en valeur la diversité de la culture africaine. Le festival aura lieu les 18 et 19 juin 2023 et mettra en vedette des artistes talentueux de toute l'Afrique. À travers cet événement, les organisateurs espèrent promouvoir l'unité, l'inclusion et l'appréciation de la beauté et de la richesse de la culture africaine.",
+    "header": "« ETM HOLDING» acteur dans le domaine des travaux publiques, fondé en Tunisie depuis janvier 2002, a mis tout son savoir-faire, ses moyens humains et matériels pour la réalisation des projets d’infrastructures routières, d’hydraulique, de promotion immobièlière et...",
+    "learn": "Savoir Plus",
+    "quote": "”PARCEQUE VOTRE SATISFACTION EST NOTRE MEILLEURE RÉCOMPENSE, NOUS NOUS ENGAGEONS À VOUS OFFRIR UN SERVICE TOUJOURS GUIDÉ PAR L’EFFICACITÉ. TOUT SEUL ON VA PLUS VITE ENSEMBLE ON VA PLUS LOIN”",
+    "last": "Dernier Article",
+    "read": "Lire Plus",
+    "sub": {
+        "tunisia": "ETM DES TRAVAUX PUBLIC _ TUNISIE",
+        "bur": "ETM DES TRAVAUX PUBLIC_ BURKINA FASO",
+        "togo": "ETM DES TRAVAUX PUBLIC_ TOGO",
+        "beton": "EXCELLENCE BETON DU CAP-BON",
+        "imm": "ETM IMMOBILIERE",
+        "button": "En savoir plus sur nos filiales"
+    },
+    "slider": {
+        "title": "Prenez plaisir à consulter le Catalogue de nos réalisations",
+        "caption": "Soyez témoin de la remarquable synergie de la qualité, de la rapidité et de l'engagement indéfectible envers l'excellence en plongeant dans notre catalogue de réalisations.",
+        "button": "Consultez notre catalogue"
+    },
     "about": {
-        "title": "À Propos de l'événement",
-        "content": "Le Festival Balafons est une célébration vibrante et diversifiée du riche patrimoine culturel de l'Afrique. Du 25 au 28 mai 2023, le festival aura lieu dans la belle ville de Tunis, en Tunisie, rassemblant des personnes de toutes les couches de la société pour découvrir la beauté et la richesse de la culture africaine. Le festival présentera une large gamme de spectacles de musique, de danse et d'art, mettant en valeur la diversité des traditions et des expressions contemporaines africaines. En plus des performances, le festival offrira une variété d'ateliers, d'expositions et de discussions, offrant des opportunités au public pour approfondir leur compréhension et leur appréciation de la culture africaine. À travers cet événement, les organisateurs visent à promouvoir l'échange culturel, le dialogue et le respect mutuel entre les personnes de différentes cultures et origines."
+        "title": "À propos de Nous",
+        "word_title": "Le Mot Du président",
+        "word_para1": "« ETM HOLDING », acteur dans le domaine des travaux publics, fondé en Tunisie depuis janvier 2002, a mis tout son savoir-faire, ses ressources humaines et matérielles pour la réalisation de projets d'infrastructures routières, hydrauliques, de développement immobilier et de commercialisation de béton préfabriqué.",
+        "word_para2": "Responsable et engagé, « ETM HOLDING » fait de la qualité et de la rapidité d'exécution ses premières valeurs ajoutées.",
+        "word_para3": "Notre développement à long terme dépend de notre capacité à nous positionner sur les offres les plus pertinentes possibles et à renforcer notre présence auprès de tous les développeurs de réseaux routiers, en intégrant des outils numériques et les nouvelles technologies qui transforment nos métiers aujourd'hui.",
+        "gras": "ETM HOLDING est également animé par une ambition unique : tendre vers l'excellence en relevant, mieux que les autres, les défis qui redéfinissent l'acte de mise en place d'une construction : respect des délais et des budgets alloués aux différents projets, priorité accordée à la santé et à la sécurité, protection de l'environnement, attention particulière portée à l'accompagnement des territoires où nous sommes présents avec la création d'emplois, mais aussi la réalisation d'actions solidaires.",
+        "phil_title": "Notre philosophie",
+        "phil_para1": "« ETM HOLDING » est un groupe diversifié, structuré par une forte culture d'entreprise et dont les activités sont organisées autour des principales activités suivantes : réalisation de projets routiers, construction, travaux hydrauliques, développement immobilier, production et commercialisation de béton et de produits de carrière, avec le désir d'être un acteur mondial positionné sur chaque maillon de la chaîne de valeur de la construction.",
+        "phil_para2": "Plus que jamais, le secteur de la construction doit faire face à des défis sociétaux, sociaux et environnementaux. Nous avons choisi de relever ces défis au quotidien, à chaque étape de nos projets. Ainsi, la construction durable est au cœur de notre stratégie.",
+        "phil_para3": "Clients, partenaires, employés, résidents... Nous accordons une attention particulière au dialogue avec nos parties prenantes. Tout au long de l'année, ces échanges nous aident à atteindre nos objectifs de développement durable.",
+        "phil_para4": "De la conception à l'exploitation d'un projet, le respect de l'environnement, intégré à notre vision de la construction durable, est l'une de nos principales préoccupations. Un engagement que nos équipes traduisent par des actions significatives.",
+        "phil_para5": "La construction durable est un enjeu majeur dans notre métier. Elle nécessite l'implication de tous les acteurs du secteur de la construction, des partenaires aux clients. Ainsi, nous agissons au quotidien pour soutenir, animer et promouvoir cette priorité stratégique du Groupe.",
+        "phil_para6": "En tant que groupe ouvert à l'international, nous accordons une attention particulière à l'accompagnement des territoires où nous serons présents. Cet engagement se concrétise par la création d'emplois, mais aussi par la réalisation d'actions solidaires.",
+        "phil_para7": "Parce que nos employés sont les premiers acteurs de l'ambition du groupe de construire une vie meilleure, nous sommes toujours plus exigeants pour promouvoir leur bien-être. Assurer l'évolution et le développement de chaque individu est une priorité qui guide nos initiatives en matière de ressources.",
+        "button1": "Consultez notre catalogue de projets",
+        "button2": "Explorez nos filiales diverses",
+        "quest": "Des questions ?",
+        "email": "Prenez contact par e-mail.",
+        "fb": "Vous pouvez également suivre notre parcours sur LinkedIn ou Facebook."
     },
-    "agenda": {
-        "before":"Avant le Festival",
-        "day1": {
-            "title": "Journée 1. Mixte",
-            "one": "Cérémonie d’ouverture type coupe d’Afrique avec passage à tour de rôle des différents pays subsahariens partenaire de l’événement, coupure du ruban, chant de l’Hymne nationale tunisienne par un orchestre mixte. discours des officiels tunisiens, de la chancellerie subsaharienne, du président de l’Aesat, du promoteur du Festival Balafon.",
-            "two": "Projection d’un vidéogramme des relations privilégiées qui ont toujours prédominé les rapports tuniso-Subsaharienne, projection des activités réalisées avant l’événement et des préparatifs",
-            "three": "Défilé avec habits traditionnel",
-            "four": "Théâtre",
-            "five": "Spectacle de danse",
-            "six": "Musique traditionnel", 
-            "seven": "Oeuvre d’art (art plastique), scénographie africaine"
-        },
-        "day2": {
-            "title": "Journée 2.",
-            "header": "Afrique Nord- Afrique de l’Est: Tunisie, Libye, Maroc, Égypte, Algérie, Mauritanie, le Burundi, les Comores, Djibouti, l’Éthiopie,la Somalie, le Soudan du Sud, le Soudan",
-            "one": "Dance",
-            "two": "Théâtre",
-            "three": "Défilé de Mode Miss Tunisie",
-            "four": "Concours de la sapologie",
-            "five": "Dégustation de mets gratuit",
-            "six": "Stand d’exposition",
-            "seven": "Campagne médicale sur Bourguiba- Dépistage",
-            "eight": "Exposition des entreprises migrantes",
-            "nine": "Concours du plus grand mangeur",
-            "ten": "Concert artiste international et locaux",
-            "eleven": "Karaoké ouvert au public"
-        },
-        "day3": {
-            "title": "Journée 3.",
-            "header": "Afrique de l'Ouest: le Bénin, le Burkina Faso, Cap Vert, la Gambie, le Ghana, la Guinée, la Guinée-Bissau, le Mali, le Niger, le Nigéria, le Sénégal et le Togo."
-        },
-        "day4": {
-            "title": "Journée 4.",
-            "header": "Afrique Central- Afrique Australe: Cameroun, République centrafricaine, République du Congo. République démocratique du Congo, Gabon, Guinée équatoriale, Sao Tomé-et-Principe,Tchad, Angola, et Zimbabwe"
-        },
-        "one": "Séminaire : conférence de presse pour le lancement officiel du festival balafon et du programme des activités menées",
-        "two": "Séances de débat ouvert : questions d'accueil et de réfugiés, cultures africaines, alimentation, écologique dans différents lieux et université.",
-        "three":"Match de l'amitié Ifrikya-Africa : un match de gala femme entre les îcones politiques, les journalistes, etc de différentes nationalités subsahariennes et tunisiennes.",
-        "four": "Formation : entreprenariat, soft skills,etc avec Enda et de préférence les inscriptions devraient commencer en ce mois d'avril.",
-        "five":"Marche écologique avec nettoyage et ramassage d'ordures au niveau de Carthage.",
-        "six": "Cours de langue pour faciliter l'intégration(Principalement de Tunisiens pour les subsahariens, Cours de Wolo)"
-    },
-    "details": {
-        "miss_content": "Le Miss Tunisie Fashion Show est une vitrine de la beauté et de la mode du pays. Cet événement présente certaines des femmes tunisiennes les plus talentueuses et les plus belles alors qu'elles gracieusement la scène dans des tenues inspirées de l'Afrique. C'est l'occasion de découvrir les dernières tendances de la mode tunisienne et de célébrer la diversité de la beauté africaine.",
-        "food_content": "La nourriture est une partie importante de toute culture, et la cuisine africaine ne fait pas exception. La dégustation gratuite de plats africains lors de notre festival donne aux visiteurs l'occasion de découvrir les saveurs riches et variées de la cuisine africaine. Des ragoûts épicés aux desserts sucrés, il y en a pour tous les goûts. C'est une excellente opportunité pour essayer quelque chose de nouveau et explorer les saveurs de l'Afrique.",
-        "dance_content": "La danse est une partie intégrante de la culture africaine, et à notre festival, nous la célébrons avec une variété de performances. Des danses traditionnelles aux interprétations modernes, notre vitrine de danse africaine est un régal pour les yeux et les oreilles. C'est l'occasion de vivre le rythme et l'énergie de l'Afrique, et d'apprécier les expressions uniques de la danse qui viennent de différentes régions du continent."
-        
-    },
-    "partners": "Nous sommes ravis de nous être associés à des organisations fantastiques qui partagent notre passion pour la promotion de la culture africaine. Pour des informations détaillées sur nos partenaires et leur implication dans le festival, veuillez consulter la section pertinente sur notre site web.",
-    "partners_button": "En Savoir Plus",
-    "form" : {
-        "devis": "Obtenez votre devis gratuit",
-        "title": "Contactez Nous",
-        "caption" : "N'hésitez pas à nous envoyer un message",
-        "rel" : "Veuillez préciser la relation commerciale :",
-        "rel_a": "----Êtes-Vous un----",
-        "rel_c": "Un Client", 
-        "rel_b": "Une Entreprise",
-        "res": "Reservez votre séjour",
-        "res_content": "Si vous souhaitez obtenir plus d'informations avant de réserver votre séjour, veuillez",
-        "res_link": "Cliquez ici pour nous envoyer un message",
-        "l1": "Informations Personnelles",
-        "name": "Nom & Prénom",
+    "form": {
+        "title": "N'hésitez pas à nous contacter ici",
+        "name": "Nom",
+        "ph": "Numéro de téléphone",
         "email": "Adresse Electronique",
-        "ph": "Numéro Téléphone",
-        "l2": "Hébergement",
-        "type": "Veuillez selectionner un type d'hébergement",
-        "t1": "----", 
-        "t2": "Hôtel",
-        "t3":"Maison/Villa",
-        "h_type": "Veuillez Selectionner une option",
-        "h_t1": "-----", 
-        "hlod": "Type d'hébergement",
-        "s_num": "Nombre de personnes",
-        "s_rooms": "Nombre de chambres",
-        "button": "Envoyer",
-        "bus": "Nom d'Entreprise",
-        "bemail": "Adresse Electronique de l'entreprise",
-        "bph": "Téléphone",
-        "desc": "Brève description du travail",
-        "ms": "Envoyez-nous un message",
-        "mod": "Accueil",
-        "mod_header" : "Nous avons calculé le prix estimatif",
-        "mod_priceMin": "Le prix sera entre ",
-        "mod_priceMax": "€ et "
+        "message": "Message",
+        "button": "Evoyer"
+    },
+    "catalog": {
+        "header": "Bienvenue dans notre ",
+        "header-b": "catalogue de projets archivés",
+        "subheader": "Explorez notre impressionnant portefeuille de projets terminés avec succès, mettant en valeur notre expertise en infrastructure routière, en hydraulique, en développement immobilier et en béton préfabriqué.",
+        "title": "Consultez nos réalisations"
+    },
+    "fil": {
+        "title": "Nos Filiales",
+        "tun": "ETM DES TRAVAUX PUBLIC _ TUNISIE",
+        "burk": "ETM DES TRAVAUX PUBLIC _ BURKINA FASO",
+        "togo": "ETM DES TRAVAUX PUBLIC _ TOGO",
+        "tun_desc": "Entrepreneur général qui opère au niveau national et international dans les domaines d'activité suivants :",
+        "tun_list1": "Réalisation de projets routiers",
+        "tun_list2": "Construction d'ouvrages d'ingénierie",
+        "tun_list3": "Aménagement de lotissements",
+        "tun_list4": "Production et commercialisation de béton bitumineux",
+        "tun_list5": "Production et commercialisation de produits de carrière",
+        "tun_list6": "Location d'équipements",
+        "burk_list": "Fabrication, commercialisation et mise en œuvre des bétons bitumineux et des BBME.",
+        "ex": "Société de fabrication et vente de béton prêt à l’emploi",
+        "imm": "Société immobilière qui opère dans la commercialisation des terrains viabilisés et la promotion immobilière"
     }
-
 }

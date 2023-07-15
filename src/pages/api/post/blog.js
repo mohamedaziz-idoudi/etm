@@ -2,6 +2,7 @@ import db from '../../../../db/connect'
 
 export default function handler(req, res) {
     const title = req.body.title;
+    console.log(req.body.paragraph);
     const paragraph = req.body.paragraph;
     const image = req.body.image;
     const query = "INSERT INTO blogs (title,paragraph,image,date) VALUES (?,?,?,now())"
@@ -11,6 +12,7 @@ export default function handler(req, res) {
           res.status(500).send(err);
           return;
         }
+        console.log(response);
         res.send(response);
     });
 }
