@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
+import Link from 'next/link';
 const Footer = () => {
     return (
         <section id="footer">
@@ -9,34 +10,22 @@ const Footer = () => {
                         <h5>Quick links</h5>
                         <ul className="list-unstyled quick-links">
                             <li>
-                                <a href="javascript:void();">
+                                <Link href="/">
                                     <Icon icon="fa-solid:angle-double-right" />
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="javascript:void();">
+                                <Link href="/about">
                                     <Icon icon="fa-solid:angle-double-right" />
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="javascript:void();">
+                                <Link href="/catalog">
                                     <Icon icon="fa-solid:angle-double-right" />
-                                    FAQ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void();">
-                                    <Icon icon="fa-solid:angle-double-right" />
-                                    Get Started
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void();">
-                                    <Icon icon="fa-solid:angle-double-right" />
-                                    Videos
-                                </a>
+                                    Catalog
+                                </Link>
                             </li>
                         </ul>
                     </div>

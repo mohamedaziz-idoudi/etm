@@ -72,7 +72,9 @@ const Contact = () => {
             <label className='eden__contact_item'>Message</label>
             <textarea className='eden__contact_item' name="message" ref={ref_message} />
           </div>
-          <input type="submit" value={t('form.button')} />
+          <div className='dark_button'>
+            <input type="submit" value={t('form.button')} />
+          </div>
           <p id='notification'></p>
         </form>
       </div>

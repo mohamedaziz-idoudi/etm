@@ -23,13 +23,13 @@
     },
     "slider": {
         "title": "Enjoy consulting our achievements’ Catalog",
-        "caption":"Witness the remarkable synergy of quality, speed, and unwavering commitment to excellence as you dive into our catalog of achievements.",
+        "caption": "Witness the remarkable synergy of quality, speed, and unwavering commitment to excellence as you dive into our catalog of achievements.",
         "button": "Consult our Catalog"
     },
     "about": {
         "title": "About US",
         "word_title": "The Word Of The President",
-        "word_para1":"«ETM HOLDING» actor in the field of public works, founded in Tunisia since January 2002, has put all its know-how, its human and material resources for the realization of road infrastructure projects, hydraulics, real estate development and marketing of pre-employment concrete.",
+        "word_para1": "«ETM HOLDING» actor in the field of public works, founded in Tunisia since January 2002, has put all its know-how, its human and material resources for the realization of road infrastructure projects, hydraulics, real estate development and marketing of pre-employment concrete.",
         "word_para2": "Responsible and committed, «ETM HOLDING» makes quality and speed in execution, its first added values.",
         "word_para3": "Our long-term development depends on our ability to position ourselves on the most relevant offers possible and to strengthen ourselves on all road network developers, by integrating digital tools and new technologies that are transforming our businesses today",
         "gras": "ETM HOLDING is also driven by a single ambition: to strive for excellence by meeting, better than the others, the challenges that redefine the act of setting up a construction: Respect for schedules and budgets allocated to the various projects, give priority to health and safety, environmental protection, pay particular attention to supporting the territories where we are present with job creation, but also the realization of solidarity actions.",
@@ -55,8 +55,8 @@
         "message": "Message",
         "button": "Submit"
     },
-    "catalog" : {
-        "header" : "Welcome to our achieved ",
+    "catalog": {
+        "header": "Welcome to our achieved ",
         "header-b": "projects’ catalog",
         "subheader": "Explore our impressive portfolio of successfully completed projects, showcasing our expertise in road infrastructure, hydraulics, real estate development, and pre-employment concrete.",
         "title": "Consult Our Achievements"
@@ -76,6 +76,187 @@
         "burk_list": "Manufacture, marketing and implementation of bituminous concrete and BBME. ",
         "ex": "Ready-mixed concrete manufacturing and sales company",
         "imm": "Real estate company that operates in Marketing of serviced land Real estate development"
-
-    }
+    },
+    "ref": [
+        {
+            "title": "Road surfacing works in the city of Dar Chaabene - 2017 program",
+            "mo": "MO: Municipality of Dar Chaabene",
+            "year": "Year of completion 2018"
+        },
+        {
+            "title": "Rehabilitation works in the Essalama, Louatia, and Skalba neighborhoods in Menzel Temime",
+            "mo": "MO: Municipality of Menzel Temime",
+            "year": "Year of completion 2018"
+        },
+        {
+            "title": "Construction of urban roads in Beni Khiar - 2017 program",
+            "mo": "MO: Municipality of Beni Khiar",
+            "year": "Year of completion 2018"
+        },
+        {
+            "title": "Road surfacing works in the municipality of Grambalia",
+            "mo": "MO: Municipality of Grambalia",
+            "year": "Year of completion 2018"
+        },
+        {
+            "title": "Road surfacing works in the municipality of Menzel Temime",
+            "mo": "MO: Municipality of Menzel Temime",
+            "year": "Year of completion 2018"
+        },
+        {
+            "title": "Road construction, paving, and construction of a stone wall in Hammamet",
+            "mo": "MO: Municipality of Hammamet",
+            "year": "Year of completion 2018"
+        },
+        {
+            "title": "Rehabilitation works in the Abdel Salem neighborhood of Hammam Leghzez",
+            "mo": "MO: Municipality of Hammam Leghzez",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Road improvement and rehabilitation works in the city of Kelibia",
+            "mo": "MO: Municipality of Kelibia",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Construction of a crossing structure over Oued Boulidin in the city of Korba",
+            "mo": "MO: Municipality of Korba",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Road surfacing works in the city of Kelibia",
+            "mo": "MO: Municipality of Kelibia",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Road and network construction works at the Fondek Jedid Military Academy",
+            "mo": "MO: Ministry of National Defense",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Rural track development and surfacing works - 2016 Program, Lot No. 01",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Development and surfacing works of 7 rural tracks, 12.8 km",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Development and surfacing works of tracks in the Hawaria delegation in Nabeul",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Development of 8 km of rural tracks in Nabeul",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Superficial coating and shoulder replenishment of classified roads in Bizerte - 2017",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Filling gaps in the RR47E road from pk 0 to pk 16",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2017"
+        },
+        {
+            "title": "Road surfacing in Habib Bourguiba Street",
+            "mo": "MO: Municipality of Haouaria",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Development of the first phase of the Health District residential area in Ariana",
+            "mo": "MO: Municipality of Ariana",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Sidewalk surfacing works in the municipality of Beni Khiar",
+            "mo": "MO: Municipality of Beni Khiar",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Development of Harka dam tracks",
+            "mo": "MO: Ministry of Agriculture, Hydraulic Resources, and Maritime Fishing",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Development and surfacing of 2 rural tracks in the Nabeul governorate - PRD 2015, Lot No. 1",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Development and surfacing of roads and tracks in Bizerte - PRD 2015, Lot No. 08",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Rural track development and surfacing works - 2014 Program, Lot No. 01",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Rural track development and surfacing works - 2014 Program, Lot No. 02",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Rural track development and surfacing works - 2015 Program, Lot No. 01",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Consolidation works of rural tracks - 2015 Program, Lot No. 2",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Road surfacing and sidewalk works - Lot No. 1/2013",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Development and surfacing of 18.20 km of rural tracks",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Reinforcement and surfacing works of tracks",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Superficial coating and shoulder replenishment of classified roads - 2015 maintenance program",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Development and surfacing of tracks and roads - 2015 Program, Lot No. 05",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2015"
+        },
+        {
+            "title": "Development and surfacing of 6.5 km of rural tracks in Siliana - Lot No. 06",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Development and surfacing of rural tracks in the governorate of Beja - Lot No. 03",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Development and surfacing of 20.71 km of rural tracks",
+            "mo": "MO: Ministry of Equipment and Habitat",
+            "year": "Year of completion 2016"
+        },
+        {
+            "title": "Road surfacing works in the city of Kelibia",
+            "mo": "MO: Municipality of Kelibia",
+            "year": "Year of completion 2015"
+        }
+    ]
 }

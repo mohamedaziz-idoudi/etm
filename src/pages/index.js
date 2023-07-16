@@ -10,7 +10,7 @@ import Axios from 'axios';
 import i18n from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 import blog_pic from '../assets/blog.jpg'
-import React from 'react';
+import React, {useRef} from 'react';
 import tunisia from '../assets/tunisia.png'
 import togo from '../assets/togo.png'
 import burkina_faso from '../assets/burkina-faso.png'
@@ -21,7 +21,9 @@ import { Slider } from '@/components';
 
 export default function Home() {
   const router = useRouter();
-  const launchDate = new Date('2023-05-01T00:00:00Z');
+  
+
+   
   const { t, i18n } = useTranslation();
   const [blog, setBlog] = useState({})
   const [sliderWidth, setSliderWidth] = useState(550);
@@ -55,20 +57,20 @@ export default function Home() {
         <title>Group ETM Holding</title>
       </Head>
       <I18nextProvider i18n={i18n}>
-        <div className={styles.header} >
-          <h2>ETM Holding</h2>
-          <p>{t('header')}</p>
+        <div  className={styles.header} >
+          <h2 className='fade-in'>ETM Holding</h2>
+          <p className='fade-in'>{t('header')}</p>
           <div className='button-filled'>
-            <button onClick={()=> {router.push('/about')}}>{t('learn')}</button>
+            <button className='fade-in' onClick={()=> {router.push('/about')}}>{t('learn')}</button>
           </div>
         </div>
         <div className={styles.subheader} >
-          <p>{t('quote')}</p>
-          <h5>Mohamed Traki - CEO ETM Holding</h5>
+          <p className='fade-in'>{t('quote')}</p>
+          <h5 className='fade-in'>Mohamed Traki - CEO ETM Holding</h5>
         </div>
         <div className={styles.last_container}>
           <div className={styles.last_container_header}>
-            <h5>{t('last')}</h5>
+            <h5 className='fade-in'>{t('last')}</h5>
           </div>
           <div className={styles.last__container_body} >
             <div className={styles.last__container_body}>

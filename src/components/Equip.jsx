@@ -10,21 +10,31 @@ const Equip = () => {
     const [add, setAdd] = useState(false);
     const [selectedMat, setSelectedMat] = useState({});
     const [edit, setEdit] = useState(false);
-    const [newMat,setNewMat] = useState('');
-    const [newQuant,setNewQuantity] = useState('');
-    const handleSubmit = () => {
-        Axios.post("/api/equip/add", { mat: mat, quantity: quantity });
-        setView(true);
-    }
-    const handleEdit = ()=> {
-        Axios.post("/api/equip/update",{id: selectedMat.id, mat: newMat, quantity: newQuant});
-        setEdit(false);
-    }
-    const [equip, setEquip] = useState([{}]);
-    useEffect(() => {
+    const [newMat, setNewMat] = useState('');
+    const [newQuant, setNewQuantity] = useState('');
+    const [del, setDel] = useState(false);
+    const [selectedId,setSelectedId] = useState(0)
+    const fetchEquip = () => {
         Axios.get("/api/equip/fetch").then((data) => {
             setEquip(data.data);
         })
+    }
+    const handleSubmit = () => {
+        Axios.post("/api/equip/add", { mat: mat, quantity: quantity }).then(() => {
+            fetchEquip();
+        });
+        setView(true);
+    }
+    const handleEdit = () => {
+        Axios.post("/api/equip/update", { id: selectedMat.id, mat: newMat, quantity: newQuant }).then(() => {
+            fetchEquip();
+        });
+        setEdit(false);
+    }
+
+    const [equip, setEquip] = useState([{}]);
+    useEffect(() => {
+        fetchEquip();
     }, [])
     return (
         <div className="dmt__dashboard-control">
@@ -70,7 +80,7 @@ const Equip = () => {
             )}
             {!add && (
                 <div className="dashboard_table">
-                    {!edit && (
+                    {!edit && !del && (
                         <Table striped bordered hover variant="dark" style={{ width: "80%", overflow: 'scroll' }}>
                             <thead>
                                 <tr>
@@ -95,7 +105,8 @@ const Equip = () => {
                                                     })
                                                 }} />
                                                 <AiIcons.AiOutlineDelete className='table__icons-elt' onClick={() => {
-                                                    Axios.post("https://api.digimytch.com/api/delete_cat", { id: val.id });
+                                                    setDel(true);
+                                                    setSelectedId(val.id);
                                                 }} /></th>
                                         </tr>
                                     )
@@ -103,6 +114,23 @@ const Equip = () => {
                             </tbody>
 
                         </Table>
+                    )}
+                    {del && (
+                        <div className='delete_message'>
+                            <h2>Êtes-vous sûrs de supprimer cet Equipment?</h2>
+                            <div className='buttons'>
+                                <div className='button-filled'>
+                                    <button onClick={()=> {
+                                        Axios.post("/api/equip/delete",{id: selectedId})
+                                        setDel(false);
+                                        fetchEquip();
+                                    }}>Yes</button>
+                                </div>
+                                <div className='dark_button'>
+                                    <button>No</button>
+                                </div>
+                            </div>
+                        </div>
                     )}
                     {edit && (
                         <div className='dmt__dashboard-control'>
@@ -115,10 +143,10 @@ const Equip = () => {
                                 setNewQuantity(e.target.value);
                             }} />
                             <div className="dark__button">
-                                <button onClick={handleEdit}>Add</button>
+                                <button onClick={handleEdit}>Mettre à jour</button>
                             </div>
                             <div className="dark__button">
-                                <button onClick={() => { setAdd(false); setNeutre(false); setEdit(false);}}>Revenir à la page des équipments</button>
+                                <button onClick={() => { setAdd(false); setNeutre(false); setEdit(false); }}>Revenir à la page des équipments</button>
                             </div>
                         </div>
                     )}

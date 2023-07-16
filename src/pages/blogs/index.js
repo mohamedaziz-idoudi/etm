@@ -27,7 +27,7 @@ const Blogs = () => {
                                 <p dangerouslySetInnerHTML={{ __html: val.paragraph.length > 250 ? val.paragraph.substring(0, 250) + "..." : val.paragraph }} />
                                 <button onClick={()=> {
                                     router.push(`/post/${val.id}`)
-                                }}>{t('partners_button')}</button>
+                                }}>{t('learn')}</button>
                             </div>
                             <Image
                                 cloudName="dbx8tzoes"

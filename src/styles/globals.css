@@ -980,7 +980,7 @@ section .section-title {
 .formbg {
   margin: 0 auto;
   margin-top: 6rem;
-  padding: 2rem;
+  padding: 2rem 0;
   width: 100%;
   max-width: 700px;
   border-radius: 4px;
@@ -993,7 +993,7 @@ section .section-title {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .form__title {
@@ -1072,7 +1072,7 @@ legend {
 input {
   font-size: 16px;
   line-height: 28px;
-  padding: 8px 16px;
+  padding: 0.5rem 2rem;
   width: 100%;
   min-height: 44px;
   border: unset;
@@ -1091,7 +1091,7 @@ input {
 textarea {
   font-size: 16px;
   line-height: 28px;
-  padding: 8px 16px;
+  padding: 0.5rem 2rem;
   width: 100%;
   min-height: 44px;
   border: unset;
@@ -1453,4 +1453,50 @@ label {
   .materiel__container-top {
     flex-direction: column;
   }
+}
+.references {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-M);
+}
+.ref_items {
+  display: grid;
+  grid-template-columns: repeat(2,40%);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.ref_item h3 {
+  color: var(--color-green);
+}
+.slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+.formbg form input {
+  width: 100%;
 }

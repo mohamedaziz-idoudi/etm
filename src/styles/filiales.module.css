@@ -43,6 +43,11 @@
     font-family: var(--font-play);
     text-align: center;
   }
+  @media (max-width: 650px) {
+    .header h2 {
+      font-size: 3.5em;
+    }
+  }
   .elements {
     display: flex;
     flex-direction: column;
