@@ -4,7 +4,9 @@ import styles from '@/styles/About.module.css'
 import Image from 'next/image'
 import mail from '../../assets/app.png'
 import { UseTranslation, useTranslation } from 'next-i18next'
+import { useRouter } from 'next/router'
 export default function index() {
+  const router = useRouter();
   const {t} = useTranslation();
   return (
     <>
@@ -36,10 +38,10 @@ export default function index() {
         </div>
         <div className={styles.buttons}>
           <div className='button-filled'>
-            <button>{t('about.button1')}</button>
+            <button onClick={()=> {router.push("/catalog")}}>{t('about.button1')}</button>
           </div>
           <div className='dark__button'>
-            <button>{t('about.button2')}</button>
+            <button onClick={()=> {router.push("/filiales")}}>{t('about.button2')}</button>
           </div>
         </div>
         <div className={styles.questions}>

@@ -14,7 +14,7 @@ const Blogs = () => {
     const router = useRouter();
     return (
         <>
-            <div className='blogs__header'>
+            <div className='blogs__header fade-in'>
                 <h2>Blogs</h2>
             </div>
             <div className='dmt__blogs section__padding fade-in'>
