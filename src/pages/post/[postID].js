@@ -34,7 +34,7 @@ export default function Post() {
     return (
         <>
             <div className='fill_header'>
-                <h1>{post.title}</h1>
+                <h1>{post?.title}</h1>
             </div>
             <div className="dmt__blog-post">
                 <div className='dmt__training-container'>
