@@ -47,7 +47,7 @@ export default function Post() {
                             publicId={post?.image}
                             id="cloud_image" />
                         <h1>{post?.title}</h1>
-                        <h5>{post?.date}</h5>
+                        <h5>{new Date(post?.date).toDateString()}</h5>
                         <div className="dmt__training-dark_decoration"></div>
                     </div>
                     <div className="dmt__training-container_contentt">

@@ -262,7 +262,7 @@ a {
   flex-direction: column;
 
   text-align: end;
-  background: var(--color-main);
+  background: #02683294;
   padding: 2rem;
   position: absolute;
   top: 40px;
@@ -855,6 +855,10 @@ section .section-title {
   align-items: center;
   gap: 20px;
   font-family: var(--font-M);
+  padding: 4rem 2rem;
+}
+.dmt__training-container_contentt img {
+  width: 50% !important;
 }
 .dmt__blog-post img {
   width: 100%;
