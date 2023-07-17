@@ -81,7 +81,7 @@ export default function Home() {
               <h3>{blog?.title}</h3>
               <p dangerouslySetInnerHTML={{ __html: blog?.paragraph?.length > 250 ? blog?.paragraph.substring(0, 250) + "..." : blog?.paragraph }} />
               <div className='dark__button'>
-                <button>{t('read')}</button>
+                <button onClick={()=> {router.push(`/post/${blog.id}`)}}>{t('read')}</button>
               </div>
             </div>
           </div>
