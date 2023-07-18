@@ -28,7 +28,7 @@ export default function index() {
   const router = useRouter()
   return (
     <>
-      <div className={styles.header}>
+      <div className={`${styles.header} fade-in`}>
         <h2>{t('catalog.header')}<br />{t('catalog.header-b')}</h2>
         <p>{t('catalog.subheader')}</p>
       </div>
@@ -69,7 +69,7 @@ export default function index() {
       </section>
       <div className='references'>
         <div className="section-header">
-          <h2 className="targets">References</h2>
+          <h2 className="targets">{t('autre')}</h2>
         </div>
         <div className='ref_items'>
           {refArray.map((item, index) => (

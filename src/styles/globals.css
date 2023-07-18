@@ -178,7 +178,15 @@ a {
 
 
 }
-
+.languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.languages p {
+  cursor: pointer;
+}
 .arsolaire__navbar.active {
   height: 80px;
   background-color: white;

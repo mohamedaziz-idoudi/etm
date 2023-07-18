@@ -5,8 +5,29 @@ import logo from "../assets/logo.png";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import Cookies from 'js-cookie';
+import { Us, Fr } from "react-flags-select";
+const LanguageOptions = () => {
+    const { i18n } = useTranslation();
+  
+    const changeLanguage = (language) => {
+      i18n.changeLanguage(language);
+      Cookies.set("selectedLanguage", language);
+    };
+  
+    return (
+      <div className="languages">
+        <p onClick={() => changeLanguage("fr")}>
+          <Fr />FR
+        </p>
+        <p onClick={() => changeLanguage("en")}>
+          <Us />ENG
+        </p>
+      </div>
+    );
+  };
 const Menu = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
+    const [selected, setSelected] = useState("");
     return (
         <React.Fragment>
             <div className="arsolaire__navbar-links_container">
@@ -66,12 +87,8 @@ const Navbar = () => {
                 <div className="arsolaire__navbar-links_logo">
                     <Image src={logo} alt="ETM Logo" />
                 </div>
-                <div className="">
-                    <select className="form-select" aria-label="Default select example" onChange={OnChangeLanguage} value={i18n.language}>
-                        <option value="en" className="eden__lang">English</option>
-                        <option value="fr" className="eden__lang">Français</option>
-                    </select>
-                </div>
+                    <LanguageOptions />
+                
                 <div className="arsolaire__navbar-links">
                     <Menu />
 

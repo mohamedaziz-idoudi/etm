@@ -10,7 +10,7 @@ export default function index() {
   const {t} = useTranslation();
   return (
     <>
-      <div className={styles.header}>
+      <div className={`${styles.header} fade-in`}>
         <h2>{t('about.title')}</h2>
       </div>
       <div className={styles.body}>
