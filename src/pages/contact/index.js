@@ -46,7 +46,7 @@ const Contact = () => {
   };
   return (
     <React.Fragment>
-      <div className='fill_header'>
+      <div className='fill_header1'>
         <h1>Contactez Nous</h1>
       </div>
       <div className="formbg">
