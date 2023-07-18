@@ -5,9 +5,9 @@ import { useRouter } from 'next/router';
 const Slider = () => {
     const router = useRouter()
     const images = [
+        { url: "https://res.cloudinary.com/djzf1gnjd/image/upload/v1689694394/qsd_x2yipu.jpg" },
         { url: "https://res.cloudinary.com/djzf1gnjd/image/upload/v1688415417/slider1_sepghr.jpg" },
         { url: "https://res.cloudinary.com/djzf1gnjd/image/upload/v1688415418/slider2_lwugvr.jpg" },
-        { url: "https://res.cloudinary.com/djzf1gnjd/image/upload/v1688415417/slider3_kfs1su.jpg" },
 
     ];
     const [sliderWidth, setSliderWidth] = useState(896);

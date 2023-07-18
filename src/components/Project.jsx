@@ -74,7 +74,11 @@ const Project = () => {
                 console.log(response);
                 if (quill) {
                     axios.post("/api/projects/add", { title: name, paragraph: quill.root.innerHTML, image: response.data.secure_url, images: links, filiale: filiale }).then(() => {
-                        router.push('/catalog');
+                        setAdd(false);
+                        setNeutre(false);
+                        setEdit(false);
+                        setDel(false);
+                        fetchData();
                     });
                 }
 
