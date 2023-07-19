@@ -1366,7 +1366,7 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/bg.jpg");
+  background-image: url("/public/assets/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   z-index: -2;
@@ -1450,13 +1450,13 @@ label {
   }
 }
 .conc1 {
-  background-image: url('../assets/conc.jpg');
+  background-image: url('/public/assets/conc.jpg');
 }
 .conc2 {
-  background-image: url('../assets/conc2.jpg');
+  background-image: url('/public/assets/conc2.jpg');
 }
 .conc3 {
-  background-image: url('../assets/conc3.jpg');
+  background-image: url('/public/assets/conc3.jpg');
 }
 .row_projects img {
   width: 70%;
