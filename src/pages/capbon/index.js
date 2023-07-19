@@ -15,7 +15,6 @@ export default function index() {
                 <p>{t('fil.ex')}</p>
                 <div className='row'>
                     <Image src={cap1} alt='Image' />
-                    <Image src={cap} alt='Image' />
                 </div>
             </div>
         </>
