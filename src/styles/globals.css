@@ -1441,14 +1441,10 @@ label {
   height: 400px;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   margin: 1rem 0;
 }
-@media(max-width:800px) {
-  .concasseur {
-    background-attachment: scroll;
-  }
-}
+
 .conc1 {
   background-image: url('/assets/conc.jpg');
 }
