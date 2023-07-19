@@ -553,6 +553,7 @@ section .section-title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 4rem 0;
 }
 
 .dmt__dashboard-header h1 {
@@ -1408,6 +1409,12 @@ label {
   letter-spacing: 2px;
   text-align: center;
 }
+.fill_container .row {
+  gap: 20px;
+}
+.fill_container .row img {
+  object-fit: cover;
+}
 @media (max-width: 800px) {
   .fill_container {
     padding: 4rem 1rem;
@@ -1428,6 +1435,28 @@ label {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.concasseur {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 1rem 0;
+}
+@media(max-width:800px) {
+  .concasseur {
+    background-attachment: scroll;
+  }
+}
+.conc1 {
+  background-image: url('../assets/conc.jpg');
+}
+.conc2 {
+  background-image: url('../assets/conc2.jpg');
+}
+.conc3 {
+  background-image: url('../assets/conc3.jpg');
 }
 .row_projects img {
   width: 70%;
@@ -1458,6 +1487,10 @@ label {
   object-fit: cover;
 }
 #image3 {
+  width: 100%;
+  object-fit: cover;
+}
+.materiel__container-top img {
   width: 100%;
   object-fit: cover;
 }
