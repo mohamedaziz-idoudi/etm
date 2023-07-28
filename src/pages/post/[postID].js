@@ -1,20 +1,33 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useRouter } from 'next/router';
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react';
 import { Image } from 'cloudinary-react';
+import { useTranslation } from 'react-i18next'
 export default function Post() {
     const [post, setPost] = useState({});
+    const [loading, setLoading] = useState(true); // Add loading state
     const router = useRouter();
-    const { postID } = router.query;
-    const postIdInt = Math.floor(Number(postID));
+    const { t, i18n } = useTranslation();
     const [sliderWidth, setSliderWidth] = useState(896);
+    let { postID } = router.query;
+    const fetchBlogData = async () => {
+        try {
+            let blogEndpoint = "/api/post/getPost"; // Default endpoint for the 'fr' language
+            if (i18n.language === 'en') {
+                blogEndpoint = "/api/post/getPostEn"; // Use the 'en' language endpoint if the selected language is English
+            }
+            const response = await Axios.post(blogEndpoint, { id: postID });
+            setPost(response.data[0]);
+            setLoading(false); // Set loading to false after data is fetched
+        } catch (error) {
+            console.error("Error fetching blog data:", error);
+            setLoading(false); // Set loading to false in case of an error
+        }
+    };
     useEffect(() => {
-        Axios.post("/api/post/getPost", { id: postIdInt }).then((data) => {
-            setPost(data.data[0]);
-            console.log(data)
-        })
-        
+
         const handleResize = () => {
 
 
@@ -29,8 +42,15 @@ export default function Post() {
         handleResize(); // Set initial width
 
         window.addEventListener('resize', handleResize)
-    }, [postID])
-
+    }, [])
+    useEffect(() => {
+        if (postID) {
+            fetchBlogData();
+        }
+    }, [postID, i18n.language]);
+    if (loading) {
+        return <div>Loading...</div>; // Render a loading state while data is being fetched
+    }
     return (
         <>
             <div className='fill_header'>

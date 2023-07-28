@@ -6,11 +6,12 @@ import Axios from 'axios'
 import dynamic from 'next/dynamic';
 import { Editor } from '@tinymce/tinymce-react';
 import { useRouter } from 'next/router';
-import { CreateBlog, Project, Equip } from '@/components';
+import { CreateBlog,CreateBlogEN, Project, Equip } from '@/components';
 export default function index() {
     const [blog, setBlog] = useState(false)
     const [sign, setSign] = useState(false)
     const [training, setTraining] = useState(false)
+    const [blogen,setBlogEN] = useState(false);
     const [instructor, setInstructor] = useState(false);
     const [person, setPerson] = useState({});
     const [trainers, setTrainers] = useState([{}]);
@@ -39,14 +40,18 @@ export default function index() {
                     <div className="dmt__dashboard-sidebar">
                         <div className="dmt__dashboard-sidebar_links">
                             <ul>
-                                <li onClick={() => { setBlog(true); setSign(false); setTraining(false); }}>Créer Un Article</li>
-                                <li onClick={() => { setBlog(false); setSign(true); setTraining(false); }}>Les Projets</li>
-                                <li onClick={() => { setBlog(false); setSign(false); setTraining(true); }}>Les Equipments</li>
+                                <li onClick={() => { setBlog(true); setSign(false); setTraining(false);setBlogEN(false) }}>Créer Un Article</li>
+                                <li onClick={() => { setBlog(false); setSign(false); setTraining(false);setBlogEN(true) }}>English Article</li>
+                                <li onClick={() => { setBlog(false); setSign(true); setTraining(false);setBlogEN(false) }}>Les Projets</li>
+                                <li onClick={() => { setBlog(false); setSign(false); setTraining(true);setBlogEN(false) }}>Les Equipments</li>
                             </ul>
                         </div>
                     </div>
                     {blog && (
                         <CreateBlog />
+                    )}
+                    {blogen && (
+                        <CreateBlogEN />
                     )}
                     {sign && (
                         <Project />
