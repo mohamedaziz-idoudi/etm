@@ -9,6 +9,7 @@ const Blogs = () => {
     useEffect(() => {
         Axios.get("/api/post/getblogs").then((data) => {
             setPostList(data.data);
+            console.log(data.data)
         })
     }, [])
     const router = useRouter();

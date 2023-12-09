@@ -31,10 +31,7 @@ export default function Home() {
   const [sliderWidth, setSliderWidth] = useState(550);
   const fetchBlogData = async () => {
     try {
-      let blogEndpoint = "/api/post/getblogs"; // Default endpoint for the 'fr' language
-      if (i18n.language === 'en') {
-        blogEndpoint = "/api/post/getblogs_en"; // Use the 'en' language endpoint if the selected language is English
-      }
+      let blogEndpoint = "/api/post/getblogs";
       const response = await Axios.get(blogEndpoint);
       setBlog(response.data[0]);
       setLoading(false);
@@ -117,70 +114,70 @@ export default function Home() {
         <link rel="icon" href="../assets/logo.png" />
         <title>Group ETM Holding</title>
       </Head>
-      <I18nextProvider i18n={i18n}>
-        <div className={`${styles.header} fade-in`} >
-          <h2 className='fade-in'>ETM Holding</h2>
-          <p className='fade-in'>{t('header')}</p>
-          <div className='button-filled'>
-            <button className='fade-in' onClick={() => { router.push('/about') }}>{t('learn')}</button>
+      <div className={`${styles.header} fade-in`} >
+        <h2 className='fade-in'>ETM Holding</h2>
+        <p className='fade-in'>{t('header')}</p>
+        <div className='button-filled'>
+          <button className='fade-in' onClick={() => { router.push('/about') }}>{t('learn')}</button>
+        </div>
+      </div>
+      <div className={`${styles.subheader} fade-in`} >
+        <p className='fade-in'>{t('quote')}</p>
+        <h5 className='fade-in'>Mohamed Traki - CEO ETM Holding</h5>
+      </div>
+      {!loading && (
+        <div className={`${styles.last_container} fade-in`}>
+          <div className={styles.last_container_header}>
+            <h5 className='fade-in'>{t('last')}</h5>
           </div>
-        </div>
-        <div className={`${styles.subheader} fade-in`} >
-          <p className='fade-in'>{t('quote')}</p>
-          <h5 className='fade-in'>Mohamed Traki - CEO ETM Holding</h5>
-        </div>
-        {!loading && (
-          <div className={`${styles.last_container} fade-in`}>
-            <div className={styles.last_container_header}>
-              <h5 className='fade-in'>{t('last')}</h5>
-            </div>
-            <div className={styles.last__container_body} >
-              <div className={styles.last__container_body}>
+          <div className={styles.last__container_body} >
+            <div className={styles.last__container_body}>
+              {blog && blog?.image && (
                 <Image src={blog?.image} alt='blog_pic' width={sliderWidth} height={350} />
+              )}
+            </div>
+            <div className={styles.last__container_body_right}>
+              <h5>{new Date(blog?.date).toDateString()}</h5>
+              <h3>{blog?.title}</h3>
+              <p dangerouslySetInnerHTML={{ __html: blog?.paragraph?.length > 250 ? blog?.paragraph?.substring(0, 250) + "..." : blog?.paragraph }} />
+              <div className='dark__button'>
+                <button onClick={() => { router.push(`/post/${blog?.id}`) }}>{t('read')}</button>
               </div>
-              <div className={styles.last__container_body_right}>
-                <h5>{new Date(blog?.date).toDateString()}</h5>
-                <h3>{blog?.title}</h3>
-                <p dangerouslySetInnerHTML={{ __html: blog?.paragraph?.length > 250 ? blog?.paragraph.substring(0, 250) + "..." : blog?.paragraph }} />
-                <div className='dark__button'>
-                  <button onClick={() => { router.push(`/post/${blog.id}`) }}>{t('read')}</button>
-                </div>
-              </div>
             </div>
-          </div>
-        )}
-        {loading && (
-          <h4>Article Loading...</h4>
-        )}
-        <div className={`${styles.fil__container} fade-in`}>
-          <div className={styles.fil__container_items}>
-            <div className={styles.fil__container_item}>
-              <Image src={tunisia} alt='Tunisia' />
-              <h5>{t('sub.tunisia')}</h5>
-            </div>
-            <div className={styles.fil__container_item}>
-              <Image src={burkina_faso} alt='burkina_faso' />
-              <h5>{t('sub.bur')}</h5>
-            </div>
-            <div className={styles.fil__container_item}>
-              <Image src={togo} alt='togo' />
-              <h5>{t('sub.togo')}</h5>
-            </div>
-            <div className={styles.fil__container_item}>
-              <Image src={mixer} alt='Image' />
-              <h5>{t('sub.beton')}</h5>
-            </div>
-            <div className={styles.fil__container_item}>
-              <Image src={building} alt='Image' />
-              <h5>{t('sub.imm')}</h5>
-            </div>
-          </div>
-          <div className='dark__button'>
-            <button onClick={() => { router.push('/filiales') }}>{t('sub.button')}</button>
           </div>
         </div>
-        <Slider />
-      </I18nextProvider>
+      )}
+      {loading && (
+        <h4>Article Loading...</h4>
+      )}
+      <div className={`${styles.fil__container} fade-in`}>
+        <div className={styles.fil__container_items}>
+          <div className={styles.fil__container_item}>
+            <Image src={tunisia} alt='Tunisia' />
+            <h5>{t('sub.tunisia')}</h5>
+          </div>
+          <div className={styles.fil__container_item}>
+            <Image src={burkina_faso} alt='burkina_faso' />
+            <h5>{t('sub.bur')}</h5>
+          </div>
+          <div className={styles.fil__container_item}>
+            <Image src={togo} alt='togo' />
+            <h5>{t('sub.togo')}</h5>
+          </div>
+          <div className={styles.fil__container_item}>
+            <Image src={mixer} alt='Image' />
+            <h5>{t('sub.beton')}</h5>
+          </div>
+          <div className={styles.fil__container_item}>
+            <Image src={building} alt='Image' />
+            <h5>{t('sub.imm')}</h5>
+          </div>
+        </div>
+        <div className='dark__button'>
+          <button onClick={() => { router.push('/filiales') }}>{t('sub.button')}</button>
+        </div>
+      </div>
+      <Slider />
     </>
   )
 }
