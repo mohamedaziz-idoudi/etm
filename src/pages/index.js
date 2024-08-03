@@ -33,6 +33,7 @@ export default function Home() {
     try {
       let blogEndpoint = "/api/post/getblogs";
       const response = await Axios.get(blogEndpoint);
+      console.log(response.data)
       setBlog(response.data[0]);
       setLoading(false);
     } catch (error) {

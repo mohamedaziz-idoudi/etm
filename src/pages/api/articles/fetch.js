@@ -12,7 +12,7 @@ export default function handler(req, res) {
         connectionLimit: 10,
         queueLimit: 10
     });
-    connection.query('SELECT * FROM blogs', (error, results, fields) => {
+    connection.query('SELECT * FROM blogs WHERE title is not null', (error, results, fields) => {
         if (error) {
             console.error(error);
             res.status(500).json({ message: 'Error fetching users' });

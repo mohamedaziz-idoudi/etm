@@ -75,7 +75,7 @@ const Footer = () => {
                             © All right Reversed.
                             <a
                                 className="text-green ml-2"
-                                href="https://www.sunlimetech.com"
+                                href="https://www.datumwave.com"
                                 target="_blank"
                             >
                                 ONCA Solution
