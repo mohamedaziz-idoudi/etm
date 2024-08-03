@@ -14,10 +14,7 @@ export default function Post() {
     let { postID } = router.query;
     const fetchBlogData = async () => {
         try {
-            let blogEndpoint = "/api/post/getPost"; // Default endpoint for the 'fr' language
-            if (i18n.language === 'en') {
-                blogEndpoint = "/api/post/getPostEn"; // Use the 'en' language endpoint if the selected language is English
-            }
+            let blogEndpoint = "/api/post/getPost"; 
             const response = await Axios.post(blogEndpoint, { id: postID });
             setPost(response.data[0]);
             setLoading(false); // Set loading to false after data is fetched
